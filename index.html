@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <img src="images/bg.jpg" alt="" class="bg">
+        <img src="images/moon.png" alt="" class="moon">
+        <img src="images/mountain.png" alt="" class="mountain">
+        <img src="images/road.png" alt="" class="road">
+        <h1 class="text">moon light</h1>
+    </div>
+    ashgj   xyw
+</body>
+
+</html>
+<script type="text/javascript">
+    var bg = document.querySelector(".bg");
+    var moon = document.querySelector(".moon");
+    var mountain = document.querySelector(".mountain");
+    var road = document.querySelector(".road");
+    var text = document.querySelector(".text");
+
+    window.addEventListener("scroll", function () {
+        var value = window.scrollY;
+        bg.style.top = value * 0.5 + "px";
+        moon.style.left = -value * 0.5 + 'px'
+        mountain.style.top = -value * 0.15 + 'px';
+        road.style.top = value * 0.15 + 'px';
+        text.style.top = value * 1 + 'px';
+
+    });
+
+
+</script>
